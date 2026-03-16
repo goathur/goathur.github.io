@@ -1,0 +1,96 @@
+<!-- home page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ruth Agorrilla</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://goathur.github.io/css/home.css">
+    <link type="text/css" rel="stylesheet" href="https://goathur.github.io/css/nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for button icons--> 
+  </head>
+
+<!-- navigation bar (put on every page!) -->
+  <div id="top-direct">
+    <h1 id="name-title">Ruth Agorrilla</h1>
+    <div id="navi">
+    <ul class="nav-bar">
+      <li id="home"><a class="nav-button" href=home.html>Home</a></li>
+      <li id="contact"><a class="nav-button" href=projects.html>Projects</a></li>
+      <li id="about"><a class="nav-button" href=about.html>About</a></li>
+    </ul>
+  </div>
+  </div>
+  <div id="mobile_dropdown">
+    <div id="dropdown_button_sec">
+      <button class="btn" id="dropdown_btn" ><i class="fa fa-bars"></i></button>
+    </div> <!-- dropdown menu (will be hidden until button is pressed; mobile only)-->
+    <div id="dropdown_menu" class= "hidden">
+      <a href="home.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+<!-- home page -->
+  <div id="intro-box">
+    <div id="intro-hi">
+      <h1 id="intro-text">Hello! I'm a Mechanical Engineer!</h1>
+      <h2 id="intro-body">Welcome to my portfolio page!</h2>
+    </div>
+  </div>
+
+  <!-- skills -->
+  <div id="skills">
+    <div id="skills-desc">
+      <h2 id="sk-desc">My Skills</h2>
+      <div id="sk-desc2">Here are some skills that I currently possess</div>
+    </div>
+    <div class="skills-list">
+      <div id="cad-skill" class="skill-category">
+        <div id="cad-skill-icon" class="skill-icon" ><i class="fa fa-gear"></i></div>
+        <h3 class="skill-name">Computer-Aided Design (CAD)</h3>
+        <p class="mobile_skills">AutoDesk Fusion 360<br>FreeCAD<br>Siemens NX<br>SolidWorks</p>
+        <p class="desktop_skills">AutoDesk Fusion 360, FreeCAD, Siemens NX, <br>SolidWorks</p>
+      </div>
+      <div id="fea-skill" class="skill-category">
+        <div id="fea-skill-icon" class="skill-icon"><i class="fa fa-line-chart"></i></div>
+        <h3 class="skill-name">Finite Element Analysis (FEA)</h3>
+        <p class="mobile_skills">ANSYS<br>NX Design Simulations<br>PrePoMax<br>SolidWorks Simulations</p>
+        <p class="desktop_skills">ANSYS, NX Design Simulations, PrePoMax,<br>SolidWorks Simulations</p>
+      </div>
+      <div id="data-skill" class="skill-category">
+        <div id="data-skill-icon" class="skill-icon"><i class="fa fa-pie-chart"></i></div>
+        <h3 class="skill-name">Data Visualization</h3>
+        <p class="mobile_skills">MATLAB<br>Microsoft Excel</p>
+        <p class="desktop_skills">MATLAB, Microsoft Excel</p>
+      </div>
+      <div id="manu-skill" class="skill-category">
+        <div id="manu-skill-icon" class="skill-icon"><i class="fa fa-wrench"></i></div>
+        <h3 class="skill-name">Manufacturing/Shop</h3>
+        <p class="mobile_skills">3D Printing<br>Hand Tools<br>Instrumentation Testing<br>Laser Cutting<br>Rapid Prototyping</p>
+        <p class="desktop_skills">3D Printing, Hand Tools, Instrumentation <br>Testing, Laser Cutting, Rapid Prototyping</p>
+      </div>
+    </div>
+  </div>
+
+<!-- recent work --> 
+  <div id="recent-work">
+    <div id="recent-work-desc">
+      <h2 id="rw-desc">Recent Projects</h2>
+      <div id="rw-desc2">Some projects that I have worked on lately</div>
+      <div id="rw-desc3">Click on an image to learn more about them</div>
+    </div>
+    <div class="work-buttons">
+      <div id="work-1" onclick="window.location.href='https://goathur.github.io/projects/pf.01.html'"><h4>PF.01</h4></br><p>Personal Project</p></div> 
+      <div id="work-2" onclick="window.location.href='https://goathur.github.io/projects/umbrella_backpack_clamp.html'"><h4>Umbrella Backpack Clamps</h4></br><p>IDEA Lab</p></div>
+    </div>
+    <div id="more-proj-btn" onclick="window.location.href='projects.html'">Projects Page</div>
+    <div class="footer">
+      <p> Copyright @ 2026 Ruth Agorrilla</p>
+    </div>
+  </div>
+   <script src="https://goathur.github.io/home.js">
+  </script>
+</html>
