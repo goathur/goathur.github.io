@@ -1,0 +1,485 @@
+ /*navigation bar (uniform across all main pages)*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+/*start with mobile first*/
+@media (max-width: 37.5rem) {
+  #about-intro{
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #050A44;
+    text-align: center;
+}
+  #about-pic{
+        background-image: url(https://goathur.github.io/assets/IMG_4932.jpg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 120% 100%;
+        margin-top: 10%;
+        padding-top: 35%;
+        padding-bottom: 35%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 15px;
+    }
+  #resume-para{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #050A44;
+    text-align: center;
+}
+  #resume-download{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 3rem;
+    margin-top: 10%;
+    margin-left: 26%;
+    margin-right: 26%;
+  }
+  #contact-para{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #050A44;
+    text-align: center;
+  }
+  #contact-btns{
+    width: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+    #email-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 3.45rem;
+    margin-top: 10%;
+    margin-left: 26%;
+    margin-right: 26%;
+    text-decoration: none;
+  }
+    #linkedin-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 3rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 26%;
+    margin-right: 26%;
+    text-decoration: none;
+    
+  }
+    #linkedin-link:hover,#email-link:hover,#resume-download:hover{
+      cursor: pointer;
+      background-color: #dfe1f8;
+      color: #050A44;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+  }
+
+/*ipad - vertical*/
+@media only screen and (min-width: 37.5rem) {
+  #about-intro{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.563rem;
+      color: #050A44;
+    }
+  #about-para1{
+    margin-top: 14%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+  }
+  #about-pic{
+        background-image: url(https://goathur.github.io/assets/IMG_4932.jpg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 120% 100%;
+        margin-top: 5%;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 15px;
+    }
+  #resume-para{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.563rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #050A44;
+    text-align: center;
+}
+  #resume-download{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.563rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 11%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  #contact-para{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.563rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #050A44;
+    text-align: center;
+  }
+  #contact-btns{
+    width: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+    #email-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.563rem;
+    background-color: #050A44;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 6.25rem;
+    margin-top: 5%;
+    margin-left: 26%;
+    margin-right: 26%;
+    text-decoration: none;
+  }
+    #linkedin-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.563rem;
+    background-color: #050A44;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5% 5.75rem;
+    margin-top: 5%;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 5%;
+    text-decoration: none;
+  }
+    #linkedin-link:hover,#email-link:hover,#resume-download:hover{
+      cursor: pointer;
+      background-color: #dfe1f8;
+      color: #050A44;
+    }
+     .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+  }
+}
+/*ipad - horizontal*/
+@media only screen and (min-height: 48rem) and (min-width: 64rem){}
+
+/*small desktop*/
+@media only screen and (min-width: 90rem){
+  #about-intro{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    }
+  #about-para1{
+    font-size: 1.25rem;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 15%;
+  }
+  #about-pic{
+    background-image: url(https://goathur.github.io/assets/IMG_4932.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 120% 100%;
+    margin-right: 15%;
+    margin-left: 5%;
+    margin-top: 15%;
+    padding-left: 25%;
+    padding-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    }
+  #resume-block{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+  }
+  #resume-para{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 1.25rem;
+    width: 31.5rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #050A44;
+    text-align: left;
+}
+  #resume-download{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2% 5%;
+    margin-right: 5%;
+    margin-left: 6%;
+    margin-top: 5%;
+    width: 6.5rem;
+  }
+  #contacts-block{
+    background-color:#141619;
+    margin: 5% 15%;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #contact-para{
+    margin-top: 0;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 1.25rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    text-align: center;
+    width: 31.5rem;
+  }
+  #contact-btns{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+    #email-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    padding: 2% 5%;
+    width: 6.5rem;
+    text-decoration: none;
+  }
+    #linkedin-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    padding: 2% 5%;
+    width: 6.5rem;
+    text-decoration: none;
+  }
+    #linkedin-link:hover,#email-link:hover,#resume-download:hover{
+      cursor: pointer;
+      background-color: #dfe1f8;
+      color: #050A44;
+    }
+     .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+  }
+}
+
+/*desktop formatting*/
+@media (min-width: 115rem) {
+  #about-intro{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    }
+  #about-para1{
+    font-size: 1.25rem;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10%;
+  }
+  #about-pic{
+    background-image: url(https://goathur.github.io/assets/IMG_4932.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 120% 100%;
+    margin-right: 15%;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding-left: 25%;
+    padding-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    }
+  #resume-block{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+  }
+  #resume-para{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 1.25rem;
+    width: 31.5rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #050A44;
+    text-align: left;
+}
+  #resume-download{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2% 5%;
+    margin-right: 5%;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 6.5rem;
+  }
+  #contacts-block{
+    background-color:#141619;
+    margin: 5% 15%;
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #contact-para{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+  }
+  #contact-btns{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 3%;
+  }
+    #email-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    padding: 2% 5%;
+    width: 6.5rem;
+    text-decoration: none;
+  }
+    #linkedin-link{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    font-size: 1.25rem;
+    background-color: #050A44;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    padding: 2% 5%;
+    width: 6.5rem;
+    text-decoration: none;
+  }
+    #linkedin-link:hover,#email-link:hover,#resume-download:hover{
+      cursor: pointer;
+      background-color: #dfe1f8;
+      color: #050A44;
+    }
+     .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+  }
+}

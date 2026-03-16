@@ -1,0 +1,1051 @@
+/*navigation bar (uniform across all main pages)*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+/*start with mobile first*/
+@media (max-width: 37.5rem) {
+/*body with intro card*/
+    #intro-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-image: url(https://goathur.github.io/assets/mechanical_pump_bluetint.gif);
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    }
+    #intro-hi{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 0.65rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+
+/*skills window*/
+    #skills{
+        color: #141619;
+        background-color: #b3b4bd;
+        background-size: auto;
+        padding-top: 6%;
+        padding-bottom: 45%;
+        position: relative;
+        height: 120vh;
+        width: 100%;
+        z-index: 1.5;
+    }
+    .skill-category{
+        padding-top: 2%;
+        padding-bottom: 5%;
+        color: #dfe1f8;
+    }
+     #skills-desc{
+        text-align: center;
+     }
+     #sk-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.55rem;
+        color: #141619;
+        margin-bottom: 1%;
+    }
+    #sk-desc2{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.05rem;
+        color: #141619;
+        margin-bottom: 8%;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 5%;
+        padding: 0 10%;
+    }
+    .skills-list div{
+        background-color: #050A44;
+        border-radius: 15px;
+    }
+    #cad-skill, #fea-skill, #data-skill, #manu-skill{
+        grid-column: 1 / span 4;
+    }
+    .skill-icon{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .skill-name{
+        font-size: 1rem;
+    }
+    .skill-name, p{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+        font-family: 'Albert Sans', sans-serif;
+    }
+    p.mobile_skills{
+        line-height: 2;
+    }
+    p.desktop_skills{
+        display: none;
+    }
+
+/*recent work window*/
+    #recent-work{
+        color: #dfe1f8;
+        background-color: #141619;
+        position: absolute;
+        height: 107vh;
+        width: 100%;
+        padding-bottom: 40%;
+        z-index: 2;
+    }
+    #recent-work-desc{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+    #rw-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.55rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+    }
+    #rw-desc2, #rw-desc3{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.05rem;
+        color: #dfe1f8;
+    }
+    #rw-desc3{
+        margin-bottom: 2%;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        padding: 5% 8%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        line-height: 1;
+    }
+    .work-button-link{
+        color: #dfe1f8;
+        text-decoration: none;
+    }
+    #work-1{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #more-proj-btn:hover{
+        background-color: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1:hover, #work-2:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #more-proj-btn{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        background-color: #b3b4bd;
+        color: #141619;
+        position: absolute;
+        left: 50%;
+        margin-top: 15%;
+        border-radius: 15px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 5% 10%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 100%;
+    }
+}
+
+/*ipad - vertical*/
+@media only screen and (min-width: 37.5rem) {
+    /*intro window*/
+    #intro-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/mechanical_pump_bluetint.gif);
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;  
+    }
+    #intro-hi{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+
+    /*skills window*/
+    #skills{
+        color: #141619;
+        background-color: #b3b4bd;
+        background-size: auto;
+        padding-top: 2%;
+        position: relative;
+        height: 65vh;
+        width: 100%;
+        z-index: 1.5;
+    }
+     #skills-desc{
+        text-align: center;
+     }
+     .skill-category{
+        color: #dfe1f8;
+    }
+     #sk-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.5rem;
+        color: #141619;
+        margin-bottom: 1%;
+    }
+    #sk-desc2{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.0rem;
+        color: #141619;
+        margin-bottom: 2%;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 80px;
+        padding: 3.125rem 2.5%;
+    }
+    .skills-list div{
+        background-color: #050A44;
+        border-radius: 15px;
+    }
+    .skill-icon{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .skill-name{
+        font-size: 1.125rem;
+        position: relative;
+    }
+    .skill-name, p{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+        font-family: 'Albert Sans', sans-serif;
+    }
+    p.desktop_skills{
+        line-height: 2;
+        font-size: 0.95rem;
+        padding-bottom: 5%;
+    }
+    p.mobile_skills{
+        display: none;
+    }
+
+    /*recent work window*/
+    #recent-work{
+        color: #dfe1f8;
+        background-color: #141619;
+        background-size: auto;
+        position: absolute;
+        height: 58vh;
+        width: 100%;
+        padding-bottom: 12%;
+        z-index: 2;
+    }
+    #recent-work-desc{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+    #rw-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+    }
+    #rw-desc2, #rw-desc3{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #dfe1f8;
+    }
+    #rw-desc3{
+        margin-top: 0.5%;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding: 5% 5%;
+    }
+
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        line-height: 1;
+        width: 20rem;
+    }
+    .work-button-link{
+        color: #dfe1f8;
+        text-decoration: none;
+    }
+    .work-buttons div:hover, #more-proj-btn:hover{
+        background-color: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-1:hover, #work-2:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #more-proj-btn{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        background-color: #b3b4bd;
+        color: #141619;
+        position: absolute;
+        left: 50%;
+        margin-top: 6%;
+        border-radius: 15px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 4% 8%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.03%;
+      padding-bottom: 0.03%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
+
+/*ipad - horizontal*/
+@media only screen and (min-height: 48rem) and (min-width: 64rem){
+   /*intro window*/
+    #intro-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/mechanical_pump_bluetint.gif);
+    background-position: 25% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;  
+    }
+    #intro-hi{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+
+    /*skills window*/
+    #skills{
+        color: #141619;
+        background-color: #b3b4bd;
+        background-size: auto;
+        padding-top: 2%;
+        position: relative;
+        height: 85vh;
+        width: 100%;
+        z-index: 1.5;
+    }
+    .skill-category{
+        color: #dfe1f8;
+    }
+     #skills-desc{
+        text-align: center;
+     }
+     #sk-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #141619;
+        margin-bottom: 1%;
+    }
+    #sk-desc2{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #141619;
+        margin-bottom: 2%;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        padding: 3rem 10%;
+    }
+    .skills-list div{
+        background-color: #050A44;
+        border-radius: 15px;
+    }
+    .skill-icon{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .skill-name{
+        font-size: 1.125rem;
+        position: relative;
+    }
+    .skill-name, p{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+        font-family: 'Albert Sans', sans-serif;
+    }
+    p.desktop_skills{
+        line-height: 2;
+        font-size: 0.95rem;
+        padding-bottom: 5%;
+    }
+    p.mobile_skills{
+        display: none;
+    }
+
+    /*recent work window*/
+    #recent-work{
+        color: #dfe1f8;
+        background-color: #141619;
+        background-size: auto;
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+        z-index: 2;
+    }
+    #recent-work-desc{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+    #rw-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+    }
+    #rw-desc2, #rw-desc3{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #dfe1f8;
+    }
+    #rw-desc3{
+        margin-top: 0.5%;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        padding: 3% 15%;
+    }
+
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        line-height: 1;
+    }
+    .work-button-link{
+        color: #dfe1f8;
+        text-decoration: none;
+    }
+    .work-buttons div:hover, #more-proj-btn:hover{
+        background-color: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-1:hover, #work-2:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #more-proj-btn{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        background-color: #b3b4bd;
+        color: #141619;
+        position: absolute;
+        left: 50%;
+        margin-top: 5%;
+        border-radius: 15px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 2% 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.03%;
+      padding-bottom: 0.03%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
+
+/*small desktop*/
+@media only screen and (min-width: 90rem){
+   /*intro window*/
+    #intro-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/mechanical_pump_bluetint.gif);
+    background-position: 30% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;    
+    }
+    #intro-hi{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+
+    /*skills window*/
+    #skills{
+        color: #141619;
+        background-color: #b3b4bd;
+        background-size: auto;
+        padding-top: 2%;
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        z-index: 1.5;
+    }
+    .skill-category{
+        color: #dfe1f8;
+    }
+     #skills-desc{
+        text-align: center;
+     }
+     #sk-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #141619;
+        margin-bottom: 1%;
+    }
+    #sk-desc2{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #141619;
+        margin-bottom: 2%;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        padding: 3rem 10%;
+    }
+    .skills-list div{
+        background-color: #050A44;
+        border-radius: 15px;
+    }
+    .skill-icon{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .skill-name{
+        font-size: 1.125rem;
+        position: relative;
+    }
+    .skill-name, p{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+        font-family: 'Albert Sans', sans-serif;
+    }
+    p.desktop_skills{
+        line-height: 2;
+        font-size: 0.95rem;
+        padding-bottom: 5%;
+    }
+    p.mobile_skills{
+        display: none;
+    }
+
+    /*recent work window*/
+    #recent-work{
+        color: #dfe1f8;
+        background-color: #141619;
+        background-size: auto;
+        position: absolute;
+        height: 75vh;
+        width: 100%;
+        z-index: 2;
+    }
+    #recent-work-desc{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+    #rw-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+    }
+    #rw-desc2, #rw-desc3{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #dfe1f8;
+    }
+    #rw-desc3{
+        margin-top: 0.5%;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        padding: 3% 15%;
+    }
+
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        line-height: 1;
+        width: 28rem;
+    }
+
+    .work-button-link{
+        color: #dfe1f8;
+        text-decoration: none;
+    }
+    .work-buttons div:hover, #more-proj-btn:hover{
+        background-color: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-1:hover, #work-2:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #more-proj-btn{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        background-color: #b3b4bd;
+        color: #141619;
+        position: absolute;
+        left: 50%;
+        margin-top: 5%;
+        border-radius: 15px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 2% 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.03%;
+      padding-bottom: 0.03%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
+
+/*large desktop formatting*/
+@media only screen and (min-width: 115rem) {
+ /*intro window*/
+    #intro-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    }
+    #intro-hi{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+
+    /*skills window*/
+    #skills{
+        color: #141619;
+        background-color: #b3b4bd;
+        background-size: auto;
+        padding-top: 2%;
+        position: relative;
+        height: 85vh;
+        width: 100%;
+        z-index: 1.5;
+    }
+     #skills-desc{
+        text-align: center;
+     }
+     #sk-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #141619;
+        margin-bottom: 1%;
+    }
+    #sk-desc2{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #141619;
+        margin-bottom: 2%;
+    }
+    .skills-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        padding: 3rem 10%;
+    }
+    .skills-list div{
+        background-color: #050A44;
+        border-radius: 15px;
+    }
+    .skill-icon{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .skill-name{
+        font-size: 1.125rem;
+        position: relative;
+    }
+    .skill-name, p{
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%; 
+        font-family: 'Albert Sans', sans-serif;
+    }
+    p.desktop_skills{
+        line-height: 2;
+        font-size: 0.95rem;
+        padding-bottom: 5%;
+    }
+    p.mobile_skills{
+        display: none;
+    }
+
+    /*recent work window*/
+    #recent-work{
+        color: #dfe1f8;
+        background-color: #141619;
+        background-size: auto;
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+        z-index: 2;
+    }
+    #recent-work-desc{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+    #rw-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.75rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+    }
+    #rw-desc2, #rw-desc3{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        color: #dfe1f8;
+    }
+    #rw-desc3{
+        margin-top: 0.5%;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding: 3% 25%;
+    }
+
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        font-size: 1.25rem;
+        border-radius: 15px;
+        line-height: 1;
+    }
+    .work-button-link{
+        color: #dfe1f8;
+        text-decoration: none;
+    }
+    .work-buttons div:hover, #more-proj-btn:hover{
+        background-color: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-1:hover, #work-2:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #more-proj-btn{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        background-color: #b3b4bd;
+        color: #141619;
+        position: absolute;
+        left: 50%;
+        margin-top: 3%;
+        border-radius: 15px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 2% 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.03%;
+      padding-bottom: 0.03%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}

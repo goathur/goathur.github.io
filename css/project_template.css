@@ -1,0 +1,758 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  a{
+    color:#050A44; 
+  }
+
+/*start with mobile first*/
+@media (max-width: 37.5rem) {
+    #project-page{
+      position: relative;
+    }
+    #title-text{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.5rem;
+      color: #050A44;
+      margin-top: 20%;
+      text-align: center;
+    }
+    #project-img{
+      padding: 10rem 10rem;
+      margin: 1.5rem 1.5rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #skill-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 8rem;
+      margin-right: 8rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    
+    .skill{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    #program-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 8rem;
+      margin-right: 8rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .program{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+    #intro-desc{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #050A44;
+      margin-top: 10%;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #add-desc, #add-desc2{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #050A44;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #desc-img1, #desc-img2, #desc-img3, #desc-img4, #desc-img5{
+      padding: 10rem 10rem;
+      margin: 1.5rem 1.5rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 3%;
+    }
+}
+
+/*ipad - vertical*/
+@media only screen and (min-width: 37.5rem) {
+    #project-page{
+      position: relative;
+    }
+    #title-text{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.5rem;
+      color: #050A44;
+      margin-top: 15%;
+      text-align: center;
+    }
+    #project-img{
+      padding: 15rem 15rem;
+      margin: 2.5rem 7.5rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #skill-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #skill-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .skill{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    #program-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #program-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .program{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+    #intro-desc{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #050A44;
+      margin-top: 5%;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #add-desc, #add-desc2{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1rem;
+      color: #050A44;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #desc-img1, #desc-img2, #desc-img3, #desc-img4, #desc-img5{
+      padding: 15rem 15rem;
+      margin: 2.5rem 7.5rem;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 3%;
+    }
+}
+
+/*ipad - horizontal*/
+@media only screen and (min-height: 48rem) and (min-width: 64rem){
+    #project-page{
+      position: relative;
+    }
+    #project-intro{
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8%;
+    }
+    #title-text{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 2rem;
+      margin: 0%;
+      text-align: center;
+      width: 24rem;
+      color: #050A44;
+    }
+    #project-img{
+      padding: 12rem 12rem;
+      border-radius: 15px;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #skill-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 20rem;
+      margin-right: 20rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #skill-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .skill{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    #program-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 20rem;
+      margin-right: 20rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #program-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .program{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+    #intro-desc{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #050A44;
+      margin: 0%;
+      text-align: center;
+      width: 12rem;
+    }
+    #add-desc, #add-desc2{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.2rem;
+      color: #050A44;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    #desc-img1{
+      padding: 12rem 12rem;
+      border-radius: 15px;
+      margin-left: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img2, #desc-img3{
+      padding: 10rem 10rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img4, #desc-img5{
+      padding: 10rem 10rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #intro-block{
+      display: flex; 
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-top-row, #img-bottom-row{
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-bottom-row{
+      margin-bottom: 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 3%;
+    }
+}
+
+/*small desktop*/
+@media only screen and (min-width: 90rem){
+    #project-page{
+      position: relative;
+    }
+    #project-intro{
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8%;
+    }
+    #title-text{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 2rem;
+      color: #050A44;
+      margin: 0%;
+      text-align: center;
+      width: 24rem;
+    }
+    #project-img{
+      padding: 12rem 12rem;
+      border-radius: 15px;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #skill-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 35rem;
+      margin-right: 35rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #skill-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .skill{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 12rem;
+      margin-right: 12rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    #program-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 35rem;
+      margin-right: 35rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #program-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .program{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 12rem;
+      margin-right: 12rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+    #intro-desc{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #050A44;
+      margin: 0%;
+      text-align: center;
+      width: 24rem;
+    }
+    #add-desc, #add-desc2{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #050A44;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    #desc-img1{
+      padding: 12rem 12rem;
+      border-radius: 15px;
+      margin-left: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img2, #desc-img3{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img4, #desc-img5{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #intro-block{
+      display: flex; 
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-top-row, #img-bottom-row{
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-bottom-row{
+      margin-bottom: 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 3%;
+    }
+}
+
+/*large desktop formatting*/
+@media only screen and (min-width: 115rem) {
+      #project-page{
+      position: relative;
+    }
+    #project-intro{
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8%;
+    }
+    #title-text{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 2rem;
+      color: #050A44;
+      margin: 0%;
+      text-align: center;
+      width: 24rem;
+    }
+    #project-img{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin-left: 5rem;
+      margin-right: 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #skill-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 35rem;
+      margin-right: 35rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #skill-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .skill{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 12rem;
+      margin-right: 12rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    #program-title{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #050A44;
+      text-align: center;
+      margin-top: 4.2rem;
+      margin-left: 35rem;
+      margin-right: 35rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 5px;
+    }
+    #program-list{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+    .program{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #dfe1f8;
+      background-color: #545966;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-left: 12rem;
+      margin-right: 12rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+    }
+    #intro-desc{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #050A44;
+      margin: 0%;
+      text-align: center;
+      width: 24rem;
+    }
+    #add-desc, #add-desc2{
+      font-family: 'Albert Sans', sans-serif;
+      font-size: 1.3rem;
+      color: #050A44;
+      margin-top: 1.5rem;
+      text-align: center;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    #desc-img1{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin-left: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img2, #desc-img3{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #desc-img4, #desc-img5{
+      padding: 15rem 15rem;
+      border-radius: 15px;
+      margin: 0rem 3rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #intro-block{
+      display: flex; 
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-top-row, #img-bottom-row{
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+    #img-bottom-row{
+      margin-bottom: 5%;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 3%;
+    }
+}

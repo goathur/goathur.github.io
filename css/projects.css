@@ -1,0 +1,703 @@
+/*navigation bar (uniform across all main pages)*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+/*start with mobile first*/
+@media (max-width: 37.5rem) {
+/*body with intro card*/
+    #intro-projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/PROJECT_BG.png);
+    background-position: 30% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;  
+    }
+    #intro-projects{
+    margin-top: 5rem;
+    margin-left: 0.625rem;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.275rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    }
+    #intro-body{
+    font-size: 1.25rem;
+    }
+
+/*projects formatting*/
+    .projects{
+    font-family: 'Albert Sans', sans-serif;
+    color: #dfe1f8;
+    background-color: #141619;
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-bottom: 15%;
+    z-index: 2;
+    }
+    #work-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.3rem;
+        color: #dfe1f8;
+        margin-bottom: 1%;
+        margin-top: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        padding: 5% 10%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        border-radius: 15px;
+        font-size: 1.25rem;
+        line-height: 1;
+        width: 19rem;
+    }
+    #work-1{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-3{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+    #work-4{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-5{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+    #spacer{
+        display: none;
+    }
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+      margin-top: 100%;
+    }
+}
+
+/*ipad - vertical*/
+@media only screen and (min-width: 37.5rem) {
+    /*body with intro card*/
+    #intro-projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/PROJECT_BG.png);
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    }
+    #intro-projects{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.55rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    }
+    #intro-body{
+    font-size: 1.25rem;
+    }
+    /*projects formatting*/
+    #projects-text{
+        text-align: center;
+        margin-top: 2.3rem;
+    }
+    #work-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.55rem;
+        color: #dfe1f8;
+    }
+    .projects{
+    color: #dfe1f8;
+    background-color: #141619;
+    background-size: auto;
+    position: absolute;
+    height: 56vh;
+    width: 100vw;
+    padding-bottom: 5%;
+    z-index: 2;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5%;
+        padding: 3% 7%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+        border-radius: 15px;
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 15px;
+        width: 12.5rem;
+    }
+
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-3{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-5{
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #spacer{
+        background-color: transparent;
+    }
+    #spacer:hover{
+        cursor: default;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
+
+/*ipad - horizontal*/
+@media only screen and (min-height: 48rem) and (min-width: 64rem){
+    /*body with intro card*/
+    #intro-projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/PROJECT_BG.png);
+    background-position: 25% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    }
+    #intro-projects{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.55rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    }
+    #intro-body{
+    font-size: 1.25rem;
+    }
+    /*projects formatting*/
+    #projects-text{
+        text-align: center;
+        margin-top: 2.813rem;
+    }
+    #work-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.55rem;
+        color: #dfe1f8;
+    }
+    .projects{
+    color: #dfe1f8;
+    background-color: #141619;
+    background-size: auto;
+    position: absolute;
+    height: 95vh;  
+    width: 100%;
+    padding-bottom: 5%;
+    z-index: 2;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5%;
+        padding: 3% 7%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        border-radius: 15px;
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 15px;
+        width: 16.5rem;
+    }
+
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-3{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-4{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+        #work-5{
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #spacer{
+        background-color: transparent;
+    }
+    #spacer:hover{
+        cursor: default;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
+
+/*small desktop*/
+@media only screen and (min-width: 90rem){
+    /*body with intro card*/
+    #intro-projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://goathur.github.io/assets/PROJECT_BG.png);
+    background-position: 30% 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    }
+    #intro-projects{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.80rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    }
+    #intro-body{
+    font-size: 1.25rem;
+    }
+    /*projects formatting*/
+    #projects-text{
+        text-align: center;
+        margin-top: 2.813rem;
+    }
+    #work-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.8rem;
+        color: #dfe1f8;
+    }
+    .projects{
+    color: #dfe1f8;
+    background-color: #141619;
+    background-size: auto;
+    position: absolute;
+    height: 105vh;  
+    width: 100%;
+    padding-bottom: 5%;
+    z-index: 2;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5%;
+        padding: 3% 10%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        border-radius: 15px;
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 15px;
+        width: 21rem;
+    }
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #spacer{
+        background-color: transparent;
+    }
+    #spacer:hover{
+        cursor: default;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-3{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-4{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-5{
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }}
+
+
+/*desktop formatting*/
+@media only screen and (min-width: 115rem){
+/*body with intro card*/
+    #intro-projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    }
+    #intro-projects{
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1.375rem;
+    color: #dfe1f8;
+    opacity: 0;
+    animation: opening-fade 0.5s linear 0.5s forwards;
+    }
+    @keyframes opening-fade{
+        0%{
+        opacity: 0%;
+        }
+        25%{
+        opacity: 25%;
+        }
+        50%{
+        opacity: 50%;
+        }
+        75%{
+        opacity: 75%;
+        }
+        100%{
+        opacity: 100%;
+        }
+    }
+    #intro-text, #intro-body{
+    text-align: center;
+    }
+    #intro-body{
+    font-size: 2rem;
+    }
+    /*projects formatting*/
+    #projects-text{
+        text-align: center;
+        margin-top: 2.813rem;
+    }
+    #work-desc{
+        font-family: 'Albert Sans', sans-serif;
+        font-size: 1.55rem;
+        color: #dfe1f8;
+    }
+    .projects{
+    color: #dfe1f8;
+    background-color: #141619;
+    background-size: auto;
+    position: absolute;
+    height: 125vh;
+    width: 100%;
+    padding-bottom: 5%;
+    z-index: 2;
+    }
+    .work-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5%;
+        padding: 3% 10%;
+    }
+    .work-buttons div{
+        background-color: #b3b4bd;
+        color: transparent;
+        text-align: center;
+        padding-top: 13.5rem;
+        padding-bottom: 13.5rem;
+        border-radius: 15px;
+        font-size: 1.25rem;
+        line-height: 1;
+        width: 30rem;
+    }
+
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+        background: #545966;
+        color: #dfe1f8;
+        cursor: pointer;
+    }
+    #work-1{
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-2{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-3{
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-4{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-5{
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #spacer{
+        background-color: transparent;
+    }
+    #spacer:hover{
+        cursor: default;
+    }
+    .footer{
+      font-family: 'Albert Sans', sans-serif;
+      color: #dfe1f8;
+      font-size: 0.938rem;
+      background-color: #2c2e3a;
+      background-size: auto;
+      text-align: center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1.5;
+    }
+}
