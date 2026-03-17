@@ -118,15 +118,14 @@
         color: #dfe1f8;
         background-color: #141619;
         position: relative;
-        height: 115vh;
+        height: 120vh;
         width: 100%;
-        padding-top: 5%;
-        padding-bottom: 40%;
         z-index: 2;
+        overflow: hidden;
     }
     #recent-work-desc{
         text-align: center;
-        margin-top: 0%;
+        margin-top: 1.5rem;
     }
     #rw-desc{
         font-family: 'Albert Sans', sans-serif;
