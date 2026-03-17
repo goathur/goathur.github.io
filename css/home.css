@@ -117,15 +117,16 @@
     #recent-work{
         color: #dfe1f8;
         background-color: #141619;
-        position: absolute;
-        height: 107vh;
+        position: relative;
+        height: 115vh;
         width: 100%;
+        padding-top: 5%;
         padding-bottom: 40%;
         z-index: 2;
     }
     #recent-work-desc{
         text-align: center;
-        margin-top: 1.875rem;
+        margin-top: 0%;
     }
     #rw-desc{
         font-family: 'Albert Sans', sans-serif;
@@ -207,9 +208,9 @@
       background-color: #2c2e3a;
       background-size: auto;
       text-align: center;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      position: relative;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
