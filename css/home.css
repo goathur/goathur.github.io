@@ -53,12 +53,11 @@
         color: #141619;
         background-color: #b3b4bd;
         background-size: auto;
-        padding-top: 6%;
-        padding-bottom: 45%;
         position: relative;
-        height: 120vh;
+        height: 130vh;
         width: 100%;
         z-index: 1.5;
+        overflow: hidden;
     }
     .skill-category{
         padding-top: 2%;
@@ -72,6 +71,7 @@
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.55rem;
         color: #141619;
+        padding-top: 5%;
         margin-bottom: 1%;
     }
     #sk-desc2{
