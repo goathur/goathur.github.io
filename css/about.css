@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Albert Sans', sans-serif;
   }
 /*start with mobile first*/
 @media (max-width: 37.5rem) {
