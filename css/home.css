@@ -544,10 +544,9 @@
         background-color: #141619;
         background-size: auto;
         position: absolute;
-        height: 70vh;
+        height: 75vh;
         width: 100%;
         z-index: 2;
-        padding-bottom: 5rem;
     }
     #recent-work-desc{
         text-align: center;
@@ -571,7 +570,7 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 100px;
-        padding: 3% 15%;
+        padding: 3% 20%;
     }
 
     .work-buttons div{
@@ -633,7 +632,7 @@
       text-align: center;
       padding-top: 1%;
       padding-bottom: 1%;
-      position: relative;
+      position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
