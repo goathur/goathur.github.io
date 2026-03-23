@@ -544,7 +544,7 @@
         background-color: #141619;
         background-size: auto;
         position: absolute;
-        height: 75vh;
+        height: 85vh;
         width: 100%;
         z-index: 2;
     }
@@ -897,7 +897,7 @@
         background-size: auto;
         padding-top: 2%;
         position: relative;
-        height: 85vh;
+        height: 80vh;
         width: 100%;
         z-index: 1.5;
     }
