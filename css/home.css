@@ -484,6 +484,7 @@
         height: 85vh;
         width: 100%;
         z-index: 1.5;
+        padding-bottom: 5rem;
     }
     .skill-category{
         color: #dfe1f8;
@@ -546,6 +547,7 @@
         height: 70vh;
         width: 100%;
         z-index: 2;
+        padding-bottom: 5rem;
     }
     #recent-work-desc{
         text-align: center;
