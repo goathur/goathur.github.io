@@ -624,19 +624,7 @@
         padding: 2% 5%;
     }
     .footer{
-      font-family: 'Albert Sans', sans-serif;
-      color: #dfe1f8;
-      font-size: 0.938rem;
-      background-color: #2c2e3a;
-      background-size: auto;
-      text-align: center;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1.5;
+      display: none;
     }
 }
 
@@ -835,19 +823,7 @@
         padding: 2% 5%;
     }
     .footer{
-      font-family: 'Albert Sans', sans-serif;
-      color: #dfe1f8;
-      font-size: 0.938rem;
-      background-color: #2c2e3a;
-      background-size: auto;
-      text-align: center;
-      padding-top: 0.03%;
-      padding-bottom: 0.03%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1.5;
+      display: none;
     }
 }
 
@@ -956,9 +932,8 @@
         background-color: #141619;
         background-size: auto;
         position: absolute;
-        height: 100vh;
+        height: 70vh;
         width: 100%;
-        padding: 3rem;
         z-index: 2;
     }
     #recent-work-desc{
@@ -1037,18 +1012,6 @@
         padding: 2% 5%;
     }
     .footer{
-      font-family: 'Albert Sans', sans-serif;
-      color: #dfe1f8;
-      font-size: 0.938rem;
-      background-color: #2c2e3a;
-      background-size: auto;
-      text-align: center;
-      padding-top: 0.03%;
-      padding-bottom: 0.03%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1.5;
+      display: none;
     }
 }
