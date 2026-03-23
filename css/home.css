@@ -54,10 +54,10 @@
         background-color: #b3b4bd;
         background-size: auto;
         position: relative;
-        height: 130dvh;
+        height: 100%;
         width: 100%;
+        padding-bottom: 15rem;
         z-index: 1.5;
-        overflow: auto;
         box-sizing: border-box;
     }
     .skill-category{
@@ -73,13 +73,13 @@
         font-size: 1.55rem;
         color: #141619;
         padding-top: 5%;
-        margin-bottom: 1%;
+        padding-bottom: 1%;
     }
     #sk-desc2{
         font-family: 'Albert Sans', sans-serif;
         font-size: 1.05rem;
         color: #141619;
-        margin-bottom: 8%;
+        padding-bottom: 8%;
     }
     .skills-list{
         display: grid;
@@ -119,11 +119,11 @@
         color: #dfe1f8;
         background-color: #141619;
         position: relative;
-        min-height: 130dvh;
+        height: 100%;
         width: 100%;
+        padding-bottom: 15rem;
         z-index: 2;
         overflow: hidden;
-        box-sizing: border-box;
     }
     #recent-work-desc{
         text-align: center;
