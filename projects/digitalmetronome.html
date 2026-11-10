@@ -1,0 +1,97 @@
+<!--Digital Metronome-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ruth Agorrilla</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="project_template.css">
+    <link type="text/css" rel="stylesheet" href="nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Albert Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for button icons--> 
+  </head>
+
+<!-- navigation bar (put on every page!) -->
+  <div id="top-direct">
+    <h1 id="name-title">Ruth Agorrilla</h1>
+    <div id="navi">
+    <ul class="nav-bar">
+      <li id="home"><a class="nav-button" href=home.html>Home</a></li>
+      <li id="contact"><a class="nav-button" href=projects.html>Projects</a></li>
+      <li id="about"><a class="nav-button" href=about.html>About</a></li>
+    </ul>
+  </div>
+  </div>
+  <div id="mobile_dropdown">
+    <div id="dropdown_button_sec">
+      <button class="btn" id="dropdown_btn" ><i class="fa fa-bars"></i></button>
+    </div> <!-- dropdown menu (will be hidden until button is pressed; mobile only)-->
+    <div id="dropdown_menu" class= "hidden">
+      <a href="home.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+<!-- project documentation -->
+<div id="project-page">
+  <div id="project-intro">
+    <div id="project-title">
+      <h1 id="title-text">Digital Metronome</h1>
+    </div>
+    <div id="project-img" style="background-image: url('https://goathur.github.io/assets/metronome3.PNG')";></div>
+  </div>
+  <div id="skills">
+    <h2 id="skill-title">Skills Used</h2>
+    <div id="skill-list">
+    <div class="skill">Computer Aided Design</div>
+    <div class="skill">Rapid Prototyping</div>
+    <div class="skill">Microcontroller Programming</div>
+    <div class="skill">Breadboarding</div>
+    </div>
+  </div>
+  <div id="programs">
+    <h2 id="program-title">Programs Used</h2>
+    <div id="program-list">
+    <div class="program">SolidWorks</div>
+    <div class="program">MicroPython</div>
+    <div class="program">OrcaSlicer</div>
+    </div>
+  </div>
+  <div id="intro-block">
+    <div id="intro-desc">As a hobby, I am currently learning to play the piano and what I'd usually do to practice being on rhythm is searching for an online metronome. However, this isn't 
+      efficient, and I thought it would be great to make my own metronome from scratch, so I wouldn't have to look it up every time on my phone (and also reduce my screentime).<br> Originally, I wanted to base
+      my metronome off <a href="https://www.youtube.com/watch?v=lgcXCr8pnVQ">this</a>. However, I also wanted to know what exact BPM the metronome was playing at without having to do any sort of guesswork, similar
+      to the online ones I was using. Therefore, I opted to program it.
+    </div>
+    <div id="desc-img1" style="background-image: url('https://goathur.github.io/assets/metronome2.PNG')";></div>
+  </div>
+  <div id="add-desc">Utlizing Thonny to code with MicroPython, I developed a microcontroller program to control a rhythmic beep through the use of mechanical switches to increase or decrease the speed at which the beeps are going
+    at based on its BPM. The speed at which the beep is going at is also coded to be displayed as a value on an LCD screen. <br>
+    Not only did I develop the software for my metronome, but also the hardware. I designed the case and the mounting tray for my electronic components through the use of SolidWorks to create a CAD model of it, and then
+    went through a series of iterations on my case design through rapid prototyping on an FDM printer.
+  </div>
+  <div id="img-top-row">
+    <div id="desc-img2" style="background-image: url('https://goathur.github.io/assets/metronome4.PNG')";></div>
+    <div id="desc-img3" style="background-image: url('https://goathur.github.io/assets/metronome7.PNG')";></div>
+  </div>
+  <div id="img-bottom-row">
+    <div id="desc-img4" style="background-image: url('https://goathur.github.io/assets/metronome9.PNG')";></div>
+    <div id="desc-img5" style="background-image: url('https://goathur.github.io/assets/metronome5.PNG')";></div>
+  </div>
+    <div id="add-desc">Here is a video of me demoing my metronome. The piece that I'm playing is "Song of the Dark Woods" by Elie Siegmeister.
+    </div>
+    <div style="text-align:center; margin-top: 5%; margin-bottom: 5%">
+      <iframe width="720" height="480" src="https://goathur.github.io/assets/metronome8.mp4">
+      </iframe>
+    </div>
+  <div id="add-desc2">For full documentation of this project, click <a href="https://docs.google.com/presentation/d/1mdNi-lxXnJjqtZNsmoA9RqOL30CTz8LoRAEFR7c0Pc0/edit?usp=sharing">here</a>.</div>
+  <div id="add-desc2">GitHub repository for the digital metronome code can be found through this <a href="https://github.com/goathur/digital-metronome">link</a>.</div>
+</div>
+<div class="footer">
+      <p> Copyright @ 2026 Ruth Agorrilla</p>
+</div>
+<script src="home.js">
+</script>
+</html>
