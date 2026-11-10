@@ -94,33 +94,40 @@
     }
     #work-1{
         grid-column: 1 / span 3;
-        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-image: url(https://goathur.github.io/assets/metronome3.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-2{
         grid-column: 1 / span 3;
-        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-3{
         grid-column: 1 / span 3;
-        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }   
     #work-4{
         grid-column: 1 / span 3;
-        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-5{
+        grid-column: 1 / span 3;
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-6{
         grid-column: 1 / span 3;
         background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
         background-repeat: no-repeat;
@@ -130,7 +137,7 @@
     #spacer{
         display: none;
     }
-    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover, #work-6:hover{
         background: #545966;
         color: #dfe1f8;
         cursor: pointer;
@@ -236,37 +243,46 @@
         width: 12.5rem;
     }
 
-    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover, #work-6:hover{
         background: #545966;
         color: #dfe1f8;
         cursor: pointer;
     }
     #work-1{
-        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-image: url(https://goathur.github.io/assets/metronome3.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-2{
-        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-3{
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-4{
         background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-5{
-        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
-    #spacer{
-        background-color: transparent;
+    #work-6{
+        background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     #spacer:hover{
         cursor: default;
@@ -371,36 +387,42 @@
         width: 16.5rem;
     }
 
-    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover, #work-6:hover{
         background: #545966;
         color: #dfe1f8;
         cursor: pointer;
     }
     #work-1{
-        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-image: url(https://goathur.github.io/assets/metronome3.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-2{
-        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-3{
-        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-4{
-        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
         #work-5{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-6{
         background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -511,7 +533,7 @@
         border-radius: 15px;
         width: 21rem;
     }
-    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover, #work-6:hover{
         background: #545966;
         color: #dfe1f8;
         cursor: pointer;
@@ -523,30 +545,36 @@
         cursor: default;
     }
     #work-1{
-        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-image: url(https://goathur.github.io/assets/metronome3.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-2{
-        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-3{
-        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-4{
-        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-5{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-6{
         background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -646,36 +674,42 @@
         width: 30rem;
     }
 
-    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover{
+    .work-buttons div:hover, #work-1:hover, #work-2:hover, #work-3:hover, #work-4:hover, #work-5:hover, #work-6:hover{
         background: #545966;
         color: #dfe1f8;
         cursor: pointer;
     }
     #work-1{
-        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
+        background-image: url(https://goathur.github.io/assets/metronome3.PNG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-2{
-        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
+        background-image: url(https://goathur.github.io/assets/heat_insert_sorter.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-3{
-        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
+        background-image: url(https://goathur.github.io/assets/pf_01.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-4{
-        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-image: url(https://goathur.github.io/assets/IMG_9273.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
     #work-5{
+        background-image: url(https://goathur.github.io/assets/solarcooker.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #work-6{
         background-image: url(https://goathur.github.io/assets/IMG_6524.jpg);
         background-repeat: no-repeat;
         background-size: cover;
